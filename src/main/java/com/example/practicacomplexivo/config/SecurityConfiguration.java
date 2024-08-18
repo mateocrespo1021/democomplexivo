@@ -51,7 +51,7 @@ public class SecurityConfiguration {
 
         // Permitir todos los orígenes
 
-        configuration.setAllowedOrigins(List.of("http://localhost:4200")); // Cambia esto a los orígenes permitidos si es necesario
+        configuration.setAllowedOrigins(List.of("http://localhost:4200","https://frontenddemo-lilac.vercel.app")); // Cambia esto a los orígenes permitidos si es necesario
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("Authorization", "Content-Type"));
         configuration.setAllowCredentials(true); // Permite el uso de credenciales
