@@ -70,21 +70,31 @@ public class ProductoController {
             if (productoUpdates.getNombre() != null) {
                 productoActual.setNombre(productoUpdates.getNombre());
             }
-            if (productoUpdates.getCategoria() != null) {
-                productoActual.setCategoria(productoUpdates.getCategoria());
-            }
-            if (productoUpdates.getDescripcion() != null) {
-                productoActual.setDescripcion(productoUpdates.getDescripcion());
-            }
+
             if (productoUpdates.getPrecio() != null) {
                 productoActual.setPrecio(productoUpdates.getPrecio());
             }
-            if (productoUpdates.getTalla() != null) {
-                productoActual.setTalla(productoUpdates.getTalla());
+
+            if (productoUpdates.getDescripcion() != null) {
+                productoActual.setDescripcion(productoUpdates.getDescripcion());
             }
-            if (productoUpdates.getEstado() != null) {
-                productoActual.setEstado(productoUpdates.getEstado());
+
+            if (productoUpdates.getStock() != null) {
+                productoActual.setStock(productoUpdates.getStock());
             }
+
+            if (productoUpdates.getUbicacion() != null) {
+                productoActual.setUbicacion(productoUpdates.getUbicacion());
+            }
+
+            if (productoUpdates.getFecha_caducidad() != null) {
+                productoActual.setFecha_caducidad(productoUpdates.getFecha_caducidad());
+            }
+
+//            if (productoUpdates.getId_categoria() != null) {
+//                productoActual.setId_categoria(productoUpdates.getId_categoria());
+//            }
+
         }
 
         // Actualizar la imagen si se proporciona un archivo
